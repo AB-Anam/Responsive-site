@@ -32,6 +32,15 @@ main{
   background: linear-gradient(to bottom, #cc0e00d3 0%, #ff0066 100%);
   border-radius: 5px;
   padding: 7px 15px;
+  position: relative;
+  box-sizing: border-box;
+  transition: all .1s ease; 
+  opacity: 1;
+}
+.linkButton:hover{
+  color:  #ff7a59;
+  border: #ff7a59 solid 2px;
+  background:#fff;
 }
 .head-image{
   margin-left: 20px;
@@ -102,6 +111,14 @@ main{
 
 }
 
+.footer{
+  background-color: #0A0826;
+  height: 200px;
+}
+.footer-head{
+  text-align: center;
+}
+
 /* media queries */
 
 @media only screen and (max-width:688px){
@@ -111,9 +128,9 @@ main{
   }
   .products{
       width: 100%;
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(1, 0);
       flex-direction: column;
-      margin-left: 13px;
+      margin-left: 45px;
   }
   .header{
     flex-direction: column;
