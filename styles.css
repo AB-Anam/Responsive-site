@@ -112,8 +112,19 @@ main{
 .product-delivery{
   color: #121116;
 }
-
-
+.extra-item{
+  display: flex;
+}
+.other-text{
+  display: inline-flex;
+  margin-top: 100px;
+  margin-left: 80px;
+}
+.apple{
+  height: 420px;
+  margin-top: 50px;
+  margin-left: 150px;
+}
 .footer{
   background-color: #0A0826;
   height: 250px;
@@ -135,7 +146,8 @@ main{
   font: size 10px;
   
 }
-/* media queries */
+/* media queries */ 
+/* for mobile devices */
 
 @media only screen and (max-width:688px){
 
@@ -152,8 +164,27 @@ main{
     flex-direction: column;
     width: 100%;;
   }
+  .extra-item{
+    margin-left: -110px;
+    flex-direction: column;
+  }
+  .other-text{
+    margin-top: 50px;
+  }
   .footer{
     height: 300px;
   }
   
+}
+
+/* tab devices */
+@media only screen and (min-width:688px) and (max-width:992px){
+  .container{
+    width: 100%;
+
+  }
+  .products{
+    grid-template-columns: (2,0);
+  }
+
 }
