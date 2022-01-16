@@ -21,7 +21,7 @@ main{
   font-size: 14px;
 }
 .second-line{
-  color: crimson;
+  color: rgb(255, 71, 108);
 }
 
 .linkButton{
@@ -100,25 +100,41 @@ main{
 }
 
 .product{
-  height: 476px;
+  height: 550px;
   width: 329px;
   left: 209px;
   top: 1023px;
   border-radius: 5px;
   background: #FFFFFF;
   box-shadow: 0px 0px 40px rgba(0, 0,   0, 0.15);
-  
 
 }
+.product-delivery{
+  color: #121116;
+}
+
 
 .footer{
   background-color: #0A0826;
-  height: 200px;
+  height: 250px;
+  margin-top: 30px;
 }
-.footer-head{
+.copy-write{
+  color: #fff;
+}
+.icons{
+  color: #fff;
+  font-size: 15px;
+}
+.footer-box{
+  padding: 30px;
   text-align: center;
 }
-
+.footer-head{
+  color: #fff;
+  font: size 10px;
+  
+}
 /* media queries */
 
 @media only screen and (max-width:688px){
@@ -130,12 +146,14 @@ main{
       width: 100%;
       grid-template-columns: repeat(1, 0);
       flex-direction: column;
-      margin-left: 45px;
+      margin-left: 13px;
   }
   .header{
     flex-direction: column;
     width: 100%;;
   }
-  
+  .footer{
+    height: 300px;
+  }
   
 }
